@@ -24,6 +24,14 @@
             padding: 15px;    
             border-left:rgb(0, 102, 255) 5px solid;
         }
+        footer {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 40px;
+        }
         
     </style>
 </head>
@@ -34,7 +42,7 @@
     <h2>Topics</h2> 
     <ul>
         <li><a href="#Introductiontohtml">Introduction to HTML </a></li>
-        <li><a href="#HTML Document Structure">HTML Document Structure</a></li>
+        <li><a href="#HTMLDocumentStructure">HTML Document Structure</a></li>
         <li><a href="#Heading">Heading </a></li>
         <li><a href="#Paragraph">Paragraph</a></li>
         <li><a href="#TextFormatting">Text Formatting </a></li>
@@ -43,13 +51,13 @@
         <li><a href="#AddingImages">Adding Images </a></li>
         <li><a href="#CreatingTables">Creating Tables </a></li>
         <li><a href="#HTMLForms">HTML Forms </a></li>
-        <li><a href="#EmbeddingMultimedia">Embedding Multimedia (Audio & Video) </a></li>
         <li><a href="#SemanticHTML">Semantic HTML</a></li>
+        <li><a href="#Myworkshop">My workshop</a></li>
         
 </ul>
 <hr>
 
-<!--Introduction to HTML=============================================-->
+<!--Section1-->
 
 
 <h2 id="Introductiontohtml">Introduction to HTML </h2>
@@ -65,15 +73,15 @@
     - HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and 
     content of web pages 
     - HTML is not a programming language, but a markup language</pre>
-    <a href="#top">
+    <a href="#">
         top
     </a>
     <hr>
 
-<!--HTML Document Structure============================================-->
+<!--Section2-->
 
 
-    <h2 id="HTML Document Structure">HTML Document Structure </h2>
+    <h2 id="HTMLDocumentStructure">HTML Document Structure </h2>
     An HTML document has the following basic structure...
     <pre>
         คำอธิบาย:
@@ -90,17 +98,17 @@
         ตัวอย่าง: &lt;h1&gt;Hello, World!&lt;/h1&gt;
         &lt;img src="image.jpg" alt="A description of the image"&gt;
 </pre>
-<a href="#top">
+<a href="#">
         top
     </a>
 <hr>
 
-<!--Heading-===========================================================-->
+<!--Section3-->
 
 
 <h2 id="Heading">Heading </h2>
 
-<p>workshop</p>
+<p><a href="W03_01_heading.html">workshop</a></p>
 
 <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags...</p>
 
@@ -113,12 +121,12 @@
     - &lt;h6&gt;: Heading 6
 </pre>
 
-<a href="#top">
+<a href="#">
         top
     </a>
     <hr>
 
-<!--Paragraph=================================================================================-->
+<!--Section4-->
 
 
 <H2 id="Paragraph">Paragraph </H2>
@@ -129,12 +137,12 @@
  - &lt;p&gt;: Paragraph
 </PRE>
 
-<a href="#top">
+<a href="#">
         top
     </a>
     <HR>
 
-<!--Text Formatting======================================================================-->
+<!--Section5-->
 
 
 <h2 id="TextFormatting">Text Formatting </h2>
@@ -166,12 +174,12 @@
 
     </pre>
 
-    <a href="#top">
+    <a href="#">
         top
         </a>
     <hr>
 
-    <!--Creating Links=====================================================-->
+    <!-- Section6-->
 
 
 <h2 id="CreatingLinks">Creating Links </h2>
@@ -199,12 +207,12 @@
         - Use the download attribute to create a download link
         - Example: &lt;a href="file.txt" download&gt;Download Text File&lt;/a&gt;
 </pre>
-<a href="#top">
+<a href="#">
         top
         </a>
     <hr>
 
-<!--Lists (Ordered and Unordered)==========================================-->
+<!--Section7-->
 
 
 <h2 id="Lists(OrderedandUnordered)">Lists (Ordered and Unordered) </h2>
@@ -252,12 +260,12 @@
         - Example: &lt;ol style="list-style-type: upper-roman;"&gt;
         - Example: &lt;ol style="list-style-type: lower-roman;"&gt;
 </pre>
-<a href="#top">
+<a href="#">
         top
         </a>
     <hr>
 
-<!--AddingImages=========================================================-->
+<!--Section8-->
 
 
 <h2 id="AddingImages">Adding Images </h2>
@@ -269,7 +277,7 @@
         - The src attribute specifies the URL of the image
         - The alt attribute provides a description of the image
         - The width and height attributes provide the size of the image
-             - Example: &lt;img src="image.jpg" alt="description of image"&gt;
+            - Example: &lt;img src="image.jpg" alt="description of image"&gt;
             - Example: &lt;img src="image.jpg" alt="description of image" width="300" height="200"&gt;
         - Image alignment:
             - Use the align attribute to specify the alignment of an image
@@ -305,12 +313,12 @@
         }
 
 </pre>
-<a href="#top">
+<a href="#">
         top
         </a>
     <hr>
 
-
+<!--Section9-->
 
 <h2  id="CreatingTables">Creating Tables </h2>
 <a href="file:///C:/Users/TEMP/Downloads/DOC02-WS01-HTML_CSS.pdf">workshop1,workshop2</a>
@@ -325,13 +333,13 @@
     - &lt;th&gt;: Table header
     - &lt;td&gt;: Table data/cell
 </pre>
-<a href="#top">
+<a href="#">
         top
         </a>
     <hr>
 
 
-<!--HTMLForms======================================-->
+<!--Section10-->
 
     <h2 id="HTMLForms">หัวข้อเกี่ยวกับฟอร์ม </h2>
         
@@ -374,13 +382,13 @@
             - การสง่ ขอ้มลู ไปยังเซริฟ์ เวอร์
             - การใช ้JavaScript (เชน่ onsubmit)
     </pre>
-<a href="#top">
+<a href="#">
         top
         </a>
     <hr>
 
 
-<!--Semantic==============-->
+<!--Section11-->
 
 <h2 id="SemanticHTML">Semantic HTML </h2>
 <p>
@@ -394,22 +402,30 @@
     - &lt;aside&gt;: Defines content aside from the page content
     - &lt;footer&gt;: Defines a footer for a document or section
 </pre>
-<a href="#top">
+<a href="#">
         top
         </a>
     <hr>
 
-
-    <h2>
+<!--Section12-->
+    <h2 id="Myworkshop">
         My Workshop
     </h2>
-    <a>Workshop1 : Rabbit</a><br>
-    <a> Workshop2 : Login</a><br>
-    <a href="#top">
+        <ul>
+            <li><a>Workshop1 : Rabbit</a><br></li>
+        <li><a>Workshop2 : Login</a><br></li>
+    </ul>
+    <a href="#">
         top
     </a>
     <hr>
 
+    <a href="https://www.w3schools.com/">
+        Learn more about HTML
+    </a>
+    <footer>
+    <p>&copy; 2024 HTML Tutorial by  Weerawat Kornwichian </p>
+    </footer>
 
 </body>
 </html>
