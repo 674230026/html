@@ -26,19 +26,26 @@
             border-top:rgb(255, 0, 255) 5px solid;
             padding: 20px 40px;
             border-radius: 15px;
+            margin-bottom: 40px;
         }
         .container {
             max-width: 1000px;
-            margin: 20px auto;
+            margin: 2px auto;
         }
         .note {
-            border-left: 4px solid rgb(255, 0, 255);
+            border-left: 4px solid rgb(116, 114, 116);
             padding: 15px;
             color: rgb(126, 126, 126);
         }
-        .h {
-            border-left: 4px solid rgb(255, 0, 255);
-        }
+        pre {
+            background-color: #f2f2f2;
+            border-left: 5px solid rgb(255, 0, 255);
+            padding: 20px;
+            font-size: 16px;
+            
+            }
+            
+
     </style>
 </head>
 <br>
@@ -62,23 +69,18 @@
     <p class="note">💡 H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
     </section>
     
-
-
-
+<!--Section2-->
 
     <section class="card">
     <h2>2. ตัวอย่างการใช้ H1–H6 </h2>
-
-        
-        <pre>
-        &lt;h1&gt;Welcome to My Website&lt;/h1&gt; 
-        &lt;h2&gt;HTML Basics&lt;/h2&gt; 
-        &lt;h3&gt;What is HTML?&lt;/h3&gt; 
-        &lt;h4&gt;HTML Syntax&lt;/h4&gt; 
-        &lt;h5&gt;Example Code&lt;/h5&gt; 
-        &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt; 
-        </pre>
-        
+<pre>
+&lt;h1&gt;Welcome to My Website&lt;/h1&gt; 
+&lt;h2&gt;HTML Basics&lt;/h2&gt; 
+&lt;h3&gt;What is HTML?&lt;/h3&gt; 
+&lt;h4&gt;HTML Syntax&lt;/h4&gt; 
+&lt;h5&gt;Example Code&lt;/h5&gt; 
+&lt;h6&gt;Note: Case Sensitive&lt;/h6&gt; 
+</pre>        
         <h1>H1: Welcome to My Website </h1>
         <h2>H2: HTML Basics </h2>
         <h3>H3: What is HTML? </h3>
@@ -87,13 +89,27 @@
         <h6>H6: Note about heading size </h6>
         </section>
         
-        
-        
-        
-        
-        <a href="#">&larr; Back to HTML Tutorial </a>
-</div>
+<!--Section3-->
 
+        <section class="card">
+    <h2>3. ถ้าอยากให้หัวข้อ “ใหญ่กว่า” หรือ “เล็กกว่า” ขนาดเดิม?</h2> 
+    <p>ใช้ CSS แทนการเลือก h1–h6 ผิดล าดับ เช่น: </p>
+    <pre>
+h3 { 
+font-size: 40px;   /* ท าให้ H3 ใหญ่เท่า H1 ได้ */ 
+color: #c4005a; 
+} 
+h5 { 
+font-size: 12px;   /* ท าให้ H5 เล็กลงอีก */ 
+} </pre>
 
+    <p>หรือสามารถก าหนดเฉพาะบางหัวข้อได้: </p>
+    <pre>&lt;h3 style="font-size: 50px; color: blue;"&gt;Big Custom Heading&lt;/h3&gt; </pre>
+    <p class="note">💡❗ จำไว้ว่า ลำดับหัวข้อควรเป็น H1 → H2 → H3 ตามโครงสร้างเนื้อหา  ไม่ควรใช้ H5 เพื่อให้ “ตัวเล็กลง” หรือใช้ H1 
+    เพื่อให้ “ตัวใหญ่ขึ้น”  → ต้องแก้ด้วย CSS เท่านัน</p>
+</section>
+
+<a href="#">&larr; Back to HTML Tutorial </a>
+    </div>
 </body>
 </html>
