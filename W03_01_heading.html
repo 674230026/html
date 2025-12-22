@@ -37,6 +37,9 @@
             padding: 15px;
             color: rgb(126, 126, 126);
         }
+        note::before{
+            content: "👌";
+        }
         pre {
             background-color: #f2f2f2;
             border-left: 5px solid rgb(255, 0, 255);
@@ -44,7 +47,23 @@
             font-size: 16px;
             
             }
+        .back-line {
+            color: #f2f2f2;
+            text-align: center;
+            background-color: #ff0000;
+            display: inline-block;
+            text-decoration: none;
+            border: #f2f2f2;
+            padding: 4px 24px;
+            border-radius: 20px;
+        }
+        .back-line:hover {
+            color: #cc1e1e;
+            /*text-decoration: underline;*/
+            background-color: yellowgreen;
+            padding: 4px 24px;
             
+        }
 
     </style>
 </head>
@@ -109,7 +128,7 @@ font-size: 12px;   /* ท าให้ H5 เล็กลงอีก */
     เพื่อให้ “ตัวใหญ่ขึ้น”  → ต้องแก้ด้วย CSS เท่านัน</p>
 </section>
 
-<a href="#">&larr; Back to HTML Tutorial </a>
+<a href="#" class="back-line">&larr; Back to HTML Tutorial </a>
     </div>
 </body>
 </html>
