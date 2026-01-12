@@ -1,215 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>W04-HTML_CSS-link</title>
-  </head>
-  <style>
+</head>
+<style>
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0px;
-      padding: 0px;
-      line-height: 1.6;
-      background-color: rgb(220, 220, 220);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        line-height: 1.6;
+        background-color: rgb(220, 220, 220);
     }
+
     .container {
-      background-color: rgb(220, 220, 220);
-      width: 90%;
-      margin: auto;
+        background-color: rgb(220, 220, 220);
+        width: 90%;
+        margin: auto;
     }
+
     .card1 {
-      background-color: rgb(255, 255, 255);
-      border-top: rgb(255, 0, 102) 5px solid;
-      padding: 20px 40px;
-      border-radius: 15px;
-      margin-bottom: 40px;
+        background-color: rgb(255, 255, 255);
+        border-top: rgb(255, 0, 102) 5px solid;
+        padding: 20px 40px;
+        border-radius: 15px;
+        margin-bottom: 40px;
     }
+
     .card2 {
-      box-shadow: 1px 1px 5px #cac8c8;
-      border-radius: 5px;
-      padding: 10px 20px;
-      margin-bottom: 20px;
+        box-shadow: 1px 1px 5px #cac8c8;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
     }
+
     .Text-color {
-      background-color: #e4e4e4;
-      color: #676767;
+        background-color: #e4e4e4;
+        color: #676767;
     }
+
     .EL {
-      text-decoration: none;
-      color: rgb(0, 17, 255);
+        text-decoration: none;
+        color: rgb(0, 17, 255);
     }
+
     h1 {
-      color: rgb(255, 0, 102);
+        color: rgb(255, 0, 102);
     }
+
     pre {
-      background-color: #f2f2f2;
-      border-left: 5px solid rgb(255, 0, 102);
-      font-size: 16px;
-      padding: 20px;
-      white-space: pre-wrap;
+        background-color: #f2f2f2;
+        border-left: 5px solid rgb(255, 0, 102);
+        font-size: 16px;
+        padding: 20px;
+        white-space: pre-wrap;
     }
+
     .card1.module-1 {
-      border-top: #2500dd 5px solid;
+        border-top: #2500dd 5px solid;
     }
+
     .card1.module-2 {
-      border-top: #00b85c 5px solid;
+        border-top: #00b85c 5px solid;
     }
+
     .card1.module-3 {
-      border-top: #f7f45a 5px solid;
+        border-top: #f7f45a 5px solid;
     }
+
     .card1.module-4 {
-      border-top: #6d009f 5px solid;
+        border-top: #6d009f 5px solid;
     }
+
     .card1.module-5 {
-      border-top: #ff8418 5px solid;
+        border-top: #ff8418 5px solid;
     }
+
     .note {
-      color: rgb(165, 165, 165);
+        color: rgb(165, 165, 165);
     }
+
     .note.two {
-      border-left: 4px solid rgb(116, 114, 116);
-      padding: 2px;
-      color: rgb(165, 165, 165);
+        border-left: 4px solid rgb(116, 114, 116);
+        padding: 2px;
+        color: rgb(165, 165, 165);
     }
+
     .note.two::before {
-      content: "💡";
+        content: "💡";
     }
+
     h1 {
-      text-align: center;
+        text-align: center;
     }
+
     .Subtitle {
-      text-align: center;
+        text-align: center;
     }
+
     .VisitWebsite {
-      color: #ffffff;
-      text-align: center;
-      background-color: #5106a0;
-      display: inline-block;
-      text-decoration: none;
-      border: #f2f2f2;
-      padding: 4px 24px;
-      border-radius: 5px;
-      font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        background-color: #5106a0;
+        display: inline-block;
+        text-decoration: none;
+        border: #f2f2f2;
+        padding: 4px 24px;
+        border-radius: 5px;
+        font-weight: bold;
     }
+
     .Download {
-      color: #000000;
-      text-align: center;
-      background-color: #f7f45a;
-      display: inline-block;
-      text-decoration: none;
-      border: #f2f2f2;
-      padding: 4px 24px;
-      border-radius: 5px;
-      font-weight: bold;
+        color: #000000;
+        text-align: center;
+        background-color: #f7f45a;
+        display: inline-block;
+        text-decoration: none;
+        border: #f2f2f2;
+        padding: 4px 24px;
+        border-radius: 5px;
+        font-weight: bold;
     }
+
     .Text-color-Button {
-      background-color: #e4e4e4;
+        background-color: #e4e4e4;
     }
+
     .image-link {
-      width: 260px;
-      border-radius: 12px;
-      transform: 0.3s;
+        width: 260px;
+        border-radius: 12px;
+        transform: 0.3s;
     }
+
     .image-link img:hover {
-      transform: scale(1.1);
-      transition: 0.3s;
-      box-shadow: 0 4px 12px #cac8c8;
+        transform: scale(1.1);
+        transition: 0.3s;
+        box-shadow: 0 4px 12px #cac8c8;
     }
+
     .crad-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
     }
+
     .grid-3-col {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
     }
+
     @media (max-width: 992px) {
-  .crad-grid {
-    grid-template-columns: 1fr;
-  }
-}
+        .crad-grid {
+            grid-template-columns: 1fr;
+        }
+    }
 
-    @media screen and (max-width: 992px) {
-    .grid-3-col{
-    grid-template-columns: 1fr;
-  }
-}
+    @media (max-width: 992px) {
+        .grid-3-col {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
 
-  </style>
-  <body>
+<body>
     <div class="container">
-      <h1>Workshop: Various Links</h1>
-      <p class="Subtitle">เรียนรู้ลิงค์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
-      <!--card 1 : -->
-      <div class="crad-grid">
-        <div class="card1">
-          <h2>1. External Links</h2>
-          <div class="card2">
-            <a class="EL" href="https://www.wikipedia.org/">Visit Wikipedia</a>
-            <p>
-              <mark class="Text-color"><code>target-"_blank"</code></mark
-              >เปิดลิงค์ในแท็บใหม่
-            </p>
-          </div>
-          <div class="card2">
-            <a class="EL" href="https://www.google.com/?hl=th">Viset Google</a>
-            <p>
-              <mark class="Text-color"><code>target-"_self"</code></mark
-              >เปิดลิงค์ในหน้าเพิ่มเติม
-            </p>
-          </div>
-        </div>
-        <!-- Card 2 : -->
-        <div class="card1 module-1">
-          <h2>2. Internal Links & Anchor Links</h2>
-          <pre>
+        <h1>Workshop: Various Links</h1>
+        <p class="Subtitle">เรียนรู้ลิงค์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
+        <!--card 1 : -->
+        <div class="crad-grid">
+            <div class="card1">
+                <h2>1. External Links</h2>
+                <div class="card2">
+                    <a class="EL" href="https://www.wikipedia.org/">Visit Wikipedia</a>
+                    <p>
+                        <mark class="Text-color"><code>target-"_blank"</code></mark>เปิดลิงค์ในแท็บใหม่
+                    </p>
+                </div>
+                <div class="card2">
+                    <a class="EL" href="https://www.google.com/?hl=th">Viset Google</a>
+                    <p>
+                        <mark class="Text-color"><code>target-"_self"</code></mark>เปิดลิงค์ในหน้าเพิ่มเติม
+                    </p>
+                </div>
+            </div>
+            <!-- Card 2 : -->
+            <div class="card1 module-1">
+                <h2>2. Internal Links & Anchor Links</h2>
+                <pre>
 &lt;a href="about.html"&gt;About Us&lt;/a&gt;
         <p>&lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;</p>
 &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;
         </pre>
-          <a href="#">Click to Jump</a>
-          <h3>This is the jump target.</h3>
-        </div>
-        <!-- Card 3 : -->
-        <div class="card1 module-2">
-          <h2>3. Email Links</h2>
-          <pre>
+                <a href="#">Click to Jump</a>
+                <h3>This is the jump target.</h3>
+            </div>
+            <!-- Card 3 : -->
+            <div class="card1 module-2">
+                <h2>3. Email Links</h2>
+                <pre>
 &lt;a href="mailto:student@example.com?subject=Hello"&gt;
     Send an Email
 &lt;/a&gt;
-        </pre
-          >
-          <a href="mailto:Weerawat@example.com?subject=Hello">Send an Email</a>
-        </div>
-        <!-- Card 4 : -->
-        <div class="card1 module-3">
-          <h2>4. Download Links</h2>
-          <pre>
+        </pre>
+                <a href="mailto:Weerawat@example.com?subject=Hello">Send an Email</a>
+            </div>
+            <!-- Card 4 : -->
+            <div class="card1 module-3">
+                <h2>4. Download Links</h2>
+                <pre>
 &lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;
-        </pre
-          >
-          <a class="Download" href="files/youtub.jpg">Download Text File</a>
-          <p class="note">ต้องมีไฟล์ในโฟลเดอร์จึงจะดาวโหลดได้จริง</p>
+        </pre>
+                <a class="Download" href="files/youtub.jpg">Download Text File</a>
+                <p class="note">ต้องมีไฟล์ในโฟลเดอร์จึงจะดาวโหลดได้จริง</p>
+            </div>
         </div>
-      </div>
-      <!-- Card 5 : -->
-      <div class="card1 module-4">
-        <h2>5. Button Link</h2>
-        <p>ลิงค์ที่ออกแบบไห้คล้ายปุ่ม เหมาะกับปุ่มเพิ่มเติม หรือปุ่มนำทาง</p>
-        <pre>
+        <!-- Card 5 : -->
+        <div class="card1 module-4">
+            <h2>5. Button Link</h2>
+            <p>ลิงค์ที่ออกแบบไห้คล้ายปุ่ม เหมาะกับปุ่มเพิ่มเติม หรือปุ่มนำทาง</p>
+            <pre>
 &lt;a href="https://www.example.com" class="btn-link"&gt;
 Visit Website
 &lt;/a&gt;
         </pre>
-        <a class="VisitWebsite" href="https://www.example.com" class="btn-link"
-          >Visit Website</a
-        >
+            <a class="VisitWebsite" href="https://www.example.com" class="btn-link">Visit Website</a>
 
-        <p>สร้างปุ่มด้วยแท็ก <mark class="Text-color-Button">Button</mark></p>
-        <pre>
+            <p>สร้างปุ่มด้วยแท็ก <mark class="Text-color-Button">Button</mark></p>
+            <pre>
 &lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
 - มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
 - ผูกกับ DOM (document) โดยตรง
@@ -217,58 +237,58 @@ Visit Website
 - นิยมใช้มากกว่า
 - เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
 - ผูกกับ window โดยตรง
-    </pre
-        >
-        <button onclick="document.location='index.html'">HTML Tutorial</button>
-        <button onclick="location.href='https://www.example.com'">
-          Visit Website
-        </button>
-        <div class="grid-3-col">
-          <div>
-            <p>ปุ่ม<mark class="Text-color-Button"><code>document.location</mark></code></p>
-            <button>HTML Tutorial</button>
-          </div>
-          <div>
-            <p>ปุ่ม<mark class="Text-color-Button"><code>location.href</code></mark></p>
-            <button>Visilt Wevsite</button>
-          </div>
-          <div>
-            <p>ตัวอย่างปุ่มจาก https://cssnippets.shefali.dev</p>
-            <button>SUBSCRIBE</button>
-          </div>
-          <div>
-            <p>เพิ่มขอบทอง</p>
-            <button>SUBSCRIBE</button>
-          </div>
-          <div>
-            <p>เพิ่มแอนิเมชั่นเมื่อชี้ปุ่ม</p>
-            <button>SUBSCRIBE</button>
-          </div>
-          <div>
-            <p>เพิ่มปุ่มสีดำ ขอบทอง แสงวิ้ง</p>
-            <button>SUBSCRIBE</button>
-          </div>
+    </pre>
+            <button onclick="document.location='index.html'">HTML Tutorial</button>
+            <button onclick="location.href='https://www.example.com'">
+                Visit Website
+            </button>
+            <div class="grid-3-col">
+                <div>
+                    <p>ปุ่ม<mark class="Text-color-Button"><code>document.location</mark></code></p>
+                    <button>HTML Tutorial</button>
+                </div>
+                <div>
+                    <p>ปุ่ม<mark class="Text-color-Button"><code>location.href</code></mark></p>
+                    <button>Visilt Wevsite</button>
+                </div>
+                <div>
+                    <p>ตัวอย่างปุ่มจาก https://cssnippets.shefali.dev</p>
+                    <button>SUBSCRIBE</button>
+                </div>
+                <div>
+                    <p>เพิ่มขอบทอง</p>
+                    <button>SUBSCRIBE</button>
+                </div>
+                <div>
+                    <p>เพิ่มแอนิเมชั่นเมื่อชี้ปุ่ม</p>
+                    <button>SUBSCRIBE</button>
+                </div>
+                <div>
+                    <p>เพิ่มปุ่มสีดำ ขอบทอง แสงวิ้ง</p>
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Card 6 : -->
-      <div class="card1 module-5">
-        <h2>6. Image Link</h2>
-        <p>คลิกที่รูปภาพเพื่อเปืดลิงค์</p>
-        <pre>
+        <!-- Card 6 : -->
+        <div class="card1 module-5">
+            <h2>6. Image Link</h2>
+            <p>คลิกที่รูปภาพเพื่อเปืดลิงค์</p>
+            <pre>
 &lt;a href="https://youtube.com"&gt;
 &lt;img src="images/sample.jpg" width="250"&gt;
 &lt;/a&gt;
         </pre>
-        <a class="image-link" href="https://youtube.com">
-          <img src="files/youtub.jpg" width="250" />
-        </a>
-        <p class="note two">
-          หากต้องการใช้รูปของตนเอง ต้องเก็บรูปไว้ในไฟล์เดอร์ เช่น
-          <mark class="Text-color">images/photo.jpg</mark>
-        </p>
-      </div>
+            <a class="image-link" href="https://youtube.com">
+                <img src="files/youtub.jpg" width="250" />
+            </a>
+            <p class="note two">
+                หากต้องการใช้รูปของตนเอง ต้องเก็บรูปไว้ในไฟล์เดอร์ เช่น
+                <mark class="Text-color">images/photo.jpg</mark>
+            </p>
+        </div>
 
-      <a href="index.html">&larr;Back to HTML Tutorial</a>
+        <a href="index.html">&larr;Back to HTML Tutorial</a>
     </div>
-  </body>
+</body>
+
 </html>
