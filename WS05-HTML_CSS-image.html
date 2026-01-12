@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .card {
+      box-shadow: 1px 1px 5px #cac8c8;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      border-top: 5px solid rgb(255, 0, 102);
+    }
+    pre {
+      background-color: #f2f2f2;
+      border-left: 5px solid rgb(255, 0, 102);
+      font-size: 16px;
+      padding: 20px;
+      white-space: pre-wrap;
+      border-radius: 5px;
+    }
+    .colortext {
+      background-color: #cac8c8;
+    }
+    .note {
+      border-left: 4px solid rgb(116, 114, 116);
+      padding: 2px;
+      color: rgb(165, 165, 165);
+    }
+
+    .note::before {
+      content: "💡";
+    }
+  </style>
+  <body>
+    <div class="card">
+      <h2>7) Figure + Caption</h2>
+      <span class="badge">งานนักศึกษา</span>
+      <p>
+        ใช้<mark class="colortext">&lt;figure&gt;</mark> และ
+        <mark class="colortext">&lt;figcaption&gt;</mark>เพื่ออธิบายภาพ
+        (เหมาะกับบทความ/รายงาน)
+      </p>
+      <pre><code>
+&lt;figure&gt;
+    &lt;img src="..." alt="..."&gt;        
+    &lt;figcaption>รูปที่ 1: คำอธิบายภาพ&lt;/figcaption&gt;        
+&lt;/figure &gt;                
+        </code></pre>
+      <figcaption>
+        รูปที่ 1: ตัวอย่างการใส่คำอธิบายภาพด้วย figcaption
+      </figcaption>
+      <p class="note">
+        ภารกิจ: ให้นักศึกษาทำหน้า “My Favorite Place / Product / Technology”
+        โดยมีภาพอย่างน้อย 5 ภาพและต้องมี 1)รูปแบบ Gallery 2) รูปแบบ Image Link
+        3) รูปพร้อม Caption
+      </p>
+    </div>
+  </body>
+</html>
