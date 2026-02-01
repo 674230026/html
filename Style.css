@@ -1,0 +1,75 @@
+body{
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* ตารางหลัก */
+.reg{
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    border: none;
+}
+
+.reg th, .reg td{
+    border: 1px solid #bfbfbf;
+    padding: 4px 6px;
+    text-align: center;
+}
+
+/* แถบภาค */
+.term th{
+    background: #0b2fa8;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+
+/* ตารางรายวิชา */
+.subject{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.subject th{
+    background: #e8eeff;
+    font-weight: bold;
+}
+
+.subject th, .subject td{
+    border: 1px solid #c9c9c9;
+    padding: 4px 6px;
+}
+
+.subject td:nth-child(2){
+    text-align: left;
+}
+
+/* ผลการศึกษา */
+.status td{
+    background: #eeeeee;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* ตารางสรุป */
+.sum-head th{
+    background: #ffffff;
+    font-weight: bold;
+}
+
+.sum-sub th{
+    background: #ffffff;
+    font-weight: normal;
+}
+
+.sum-val td{
+    background: #ffffff;
+}
+
+/* utility */
+.no-pad{
+    padding: 0;
+    border: none;
+}
