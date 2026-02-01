@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        /*การกำหนดสไตล์ให้กับแถวเว้นแถวในตาราง ให้ใช้:nth-child(even)
+        tr:nth-child(even) {
+  background-color: #D6EEEE;
+}*/
+        /* สร้างลายม้าลายแนวตั้ง 
+        td:nth-child(even), th:nth-child(even) {
+          background-color: #D6EEEE;
+        }*/
+        /*สร้างเส้นแนวนอนด่านล่าง
+        tr {
+          border-bottom: 1px solid #ddd;
+        }*/
+        /*เว้นระยะห่างระหว่างเซลล์ในตาราง 
+        table {
+  border-spacing: 30px;
+}*/
+        /*หากต้องการเพิ่มระยะห่างเฉพาะด้านบนของเนื้อหา 
+        th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}*/
+/*การจัดวางส่วนหัวของตารางชิดซ้าย ให้ใช้text-align
+th {
+  text-align: right;
+}*/
+th, td {
+    /*background*/
+  background-color: #96D4D4;
+  /*สีกรอบ*/
+  border-color: #96D4D4;
+}
+/*liine
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden*/  
+
+    </style>
+</head>
+<body>
+    <table style=" width: 100%;">
+        <caption>Monthly savings</caption>
+        <!--ใส่สี2ช่องแรก
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE">
+        </colgroup>-->
+        <tr>
+            <th colspan="2">กดก</th>
+            <th>กด</th>
+            <th>กด</th>
+        </tr>
+        <tr>
+            <td rowspan="2">กดกด</td>
+            <td>กดด</td>
+            <td>กดด</td>
+        </tr>
+        <tr>
+            <td>กดก</td>
+            <td>ดกด</td>
+            <td>กดดกด</td>
+        </tr>
+    </table>
+</body>
+</html>
