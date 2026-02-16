@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test01</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: bisque;
+            padding-top: 70px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        img {
+            border-radius: 999px;
+            width: 220px;
+            height: 220px;
+        }
+        .container {
+        background-color: rgba(255, 255, 255, 0);
+        max-width: 900px;
+        margin: 60px auto 40px;
+        }
+        .card {
+        background-color: rgba(118, 190, 238, 0.281);
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        box-shadow: 0px 0px 7px rgb(49, 49, 49);
+        }
+        .bar {
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            background-color: rgb(143, 141, 138);
+            top: 0;
+            position: fixed;
+        }
+        h1 {
+            color: aliceblue;
+            font-size: 40px;
+        }
+        .card.moduol-1 {
+            display: flex;
+            gap: 20px;
+        }
+        .list-menu {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 10px auto;
+            transition: transform 0.25s ease;
+
+        }
+        .list-menu li {
+            transition: transfrom 0.25 ease;
+        }
+        .list-menu li:hover {
+            transform: scale(1.05)translateY(-10px);
+            transition: 0.3s;
+        }
+        .list-menu li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background-color: blueviolet;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 7px rgb(49, 49, 49);
+            font-size: 16px;;
+        }
+        
+        .list-menu a:hover {
+            background-color: bisque;
+            color: black;
+        }
+        .card.moduol-2 {
+            display: flex;
+            gap: 0px;
+            align-items: center;
+
+        }
+        .card.grid:hover {
+            transform: scale(1.05) translateY(-5px);
+            transition: 0.3s;
+        }
+        .card.grid {
+            display: flex;
+            flex-direction: column;
+            padding: 50px 100px 20px 60px;
+            margin: 20px;
+            transition: transform 0.25s ease;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            white-space: nowrap;
+            margin: 20px;
+            gap: 20px;
+        }
+        .row p {
+            font-size: 16px;
+        }
+        .image {
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .h {
+            white-space: nowrap;
+            font-size: 32px;
+        }
+        .card.moduol-3 {
+            justify-content: center;
+        }
+        .gpa {
+            text-align: center;
+            display: flex;
+            gap: 30px;
+            padding: o;
+            margin: 0;
+        }
+        .gpa div {
+            padding: 20px 39px;
+            font-size: 24px;
+            white-space: nowrap;
+        }
+        .gpa div:hover {
+            box-shadow: 0px 0px 15px blue;
+
+        }
+        .bottom {
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+        }
+        mark {
+            background-color: aliceblue;
+        }
+        .data {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <h1>🏦 รายงานผลเกรด</h1>
+    </div>
+    <div class="container">
+    <div class="card moduol-1" id="c1">
+        <ul class="list-menu">
+            <li><a href="#c1">🙎 ข้อมูลนักศึกษา</a></li>
+            <li><a href="#c2">📕 ผลการเรียน</a></li>
+            <li><a href="#c3">📥 ติดต่อ</a></li>
+        </ul>
+    </div>
+    <div class="card moduol-2" id="c1">
+        <div class="card grid">
+            <div>
+                <h1 class="h">💡 Mr. Weerawat Kornwichian</h1>
+            </div>
+            <hr>
+            <div class="row">
+                <p class ="data">✏ รหัสนักศึกษา:</p>
+                <p>674230026</p>
+                <p class ="data">🤵‍♂️ ชื่อ-นามสกุล:</p>
+                <p>วีรวัฒน์ กรวิเชียร</p>
+                <p class ="data">📚 หมู่เรียน:</p>
+                <p>67/44</p>
+                <p class ="data">👨‍🏫 อาจารย์:</p>
+                <p>อ.สุขสวัสดิ์ แซ้ลิ่ม</p>
+                <p class="data">🧩 Github:</p>
+                <p><mark>https://github.com/674230026/html</mark></p>
+            </div>
+            
+        </div>
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJrQTchi-hyBQVNm6MtzPrv3wDxjQxaUj_VrcHSbvlPAc4ta88=s288-c-no" alt="img" class="image">
+        </div>
+
+        <div class="gpa" id="c2">
+            <div class="card"><p>⚔ ปี 1 เทอม 1 : 3.75</p></div>
+            <div class="card"><p>⚔ ปี 1 เทอม 2 : 3.83</p></div>
+            <div class="card"><p>⚔ ปี 2 เทอม 1 : 3.16</p></div>
+        </div>
+
+        <div class="card module-3" style="text-align: center;" >
+            <h1 style="font-size: 40px;">📌 เกรดเฉลี่ยสะสม: 3.60</h1>
+        </div>
+        
+    </div>
+    <div class="bottom" id="c3">
+            <p>©2024 Webmaster by Weerawat Kornwichian. ID 674230026 <br>Nakhon Pathom Rachapat University</p>
+        </div>
+</body>
+</html>
