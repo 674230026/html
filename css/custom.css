@@ -471,10 +471,66 @@ a:hover {
   opacity: 0.8;
 }
 
+/*===========================================================================*/
+/* Set style for form : Left Side */
+/*===========================================================================*/
 
+.contact-form-main-card.widget {
+  background:linear-gradient(rgb(0, 252, 134),rgb(99, 241, 42));
+  border: 1px solid #05ff26;
+  box-shadow: 0px 2px 8px #0ef7ff;
 
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 20px;
 
+}
 
+.form-label.wg {
+  color: rgb(255, 255, 82);
+}
 
+.submit-button.wg {
+  background: linear-gradient(45deg, rgb(80, 247, 94) 0%, rgb(104, 255, 3) 100%);
+  box-shadow: 0 0 7px #3251dd;
+}
+
+.form-input.wg,
+.form-select.wg {
+  border: 1px solid #08c5ff;
+  box-shadow: 0 0 9px #05eeff;
+
+}
+
+/*===========================================================================*/
+/* Set style for form : Left Side */
+/*===========================================================================*/
+
+.contact-form-main-card.widget-2 {
+  background:linear-gradient(rgb(0, 202, 252),rgb(42, 78, 241));
+  border: 1px solid #05f7ff;
+  box-shadow: 0px 2px 8px #0ef7ff;
+
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 20px;
+
+}
+
+.form-label.wg2 {
+  color: rgb(255, 146, 82);
+}
+
+.submit-button.wg2 {
+  background: linear-gradient(45deg, rgb(80, 247, 247) 0%, rgb(3, 20, 255) 100%);
+  box-shadow: 0 0 7px #3251dd;
+}
+
+.form-input.wg2,
+.form-select.wg2 {
+  border: 1px solid #7308ff;
+  box-shadow: 0 0 9px #ff0550;
+
+}
 
 }
