@@ -3,43 +3,52 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Noto Sans Thai", sans-serif;
   background-color: rgb(216, 217, 218);
 }
+
 .wrapper {
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
 }
+
 /*================================================================================================*/
 /* header style*/
 /*===============================================================================================*/
 .site-header {
   background-color: rgb(255, 255, 255);
 }
+
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
 }
+
 .site-title {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 .site-subtitle {
   font-size: 0.8rem;
   font-weight: 500;
   color: rgb(92, 92, 92);
 }
+
 a {
   text-decoration: none;
   color: rgb(17, 32, 255);
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 .social-icon a {
   font-size: 1rem;
   font-weight: 600;
@@ -54,17 +63,20 @@ a:hover {
   transition: all 0.3s ease;
   margin: 5px;
 }
+
 .social-icon a:hover {
   background-color: blue;
   color: white;
   transform: translateY(-5px);
 }
+
 /*===========================================================================*/
 /* nav style */
 /*===========================================================================*/
 .main-nav {
   background-color: rgb(161, 161, 185);
 }
+
 .nav-menu {
   list-style-type: none;
   display: flex;
@@ -72,16 +84,19 @@ a:hover {
   /*justify-content: center;
   align-items: center;*/
 }
+
 .nav-menu li a {
   color: white;
   font-size: 0.91rem;
   display: block;
   padding: 10px 15px;
 }
+
 .nav-menu li a:hover,
 .nav-menu li a.active {
   background-color: rgb(66, 66, 85);
 }
+
 /*===========================================================================*/
 /* Hero style */
 /*===========================================================================*/
@@ -91,6 +106,7 @@ a:hover {
   box-shadow: 0px 2px 8px#555;
   margin-bottom: 20px;
 }
+
 .hero-title {
   font-size: 2rem;
   font-weight: 700;
@@ -99,6 +115,7 @@ a:hover {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .hero-grid {
   display: grid;
   gap: 20px;
@@ -111,6 +128,7 @@ a:hover {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     */
 }
+
 .hero-item {
   background-color: #ffffff;
   border-radius: 8px;
@@ -178,17 +196,20 @@ a:hover {
   grid-template-columns: 2fr 1fr;
   gap: 20px;
 }
+
 .post-headline {
   font-size: 0.685rem;
   color: #777;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
 .post-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .date-circle {
   background-color: rgb(173, 173, 245);
   border-radius: 50%;
@@ -202,7 +223,8 @@ a:hover {
   font-weight: 700;
   font-size: 1.2rem;
 }
-.date-circle span + span {
+
+.date-circle span+span {
   font-size: 0.69rem;
 }
 
@@ -212,7 +234,8 @@ a:hover {
   color: #777777;
   margin: 10px 0;
 }
-.post-footer  {
+
+.post-footer {
   font-size: 0.68;
   color: #444444;
   padding: 10px;
@@ -229,20 +252,24 @@ a:hover {
   border-radius: 4px;
   padding: 20px;
 }
-.card + .card {
+
+.card+.card {
   margin-top: 20px;
 }
+
 .post-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 /*card for card 1 = img*/
 .post-img {
   height: 200px;
   overflow: hidden;
   margin: 10px 0;
 }
+
 .post-img img {
   height: auto;
   width: 100%;
@@ -256,7 +283,8 @@ a:hover {
   border-radius: 4px;
   padding: 20px;
 }
-.widget + .widget {
+
+.widget+.widget {
   margin-top: 20px;
 }
 
@@ -266,7 +294,7 @@ a:hover {
   border-collapse: collapse; */
   box-shadow: 0px 2px 8px #5a5a5a;
   margin-bottom: 10px;
-} 
+}
 
 /* .comparison-tb th,
 .comparison-tb td {
@@ -279,21 +307,22 @@ a:hover {
 } */
 
 .comparison-tb th {
-  background: linear-gradient(45deg,rgb(107, 107, 107) 0%,white 100%);
+  background: linear-gradient(45deg, rgb(107, 107, 107) 0%, white 100%);
   color: white;
   padding: 15px;
 }
 
-.comparison-tb tr:nth-child(even) td{
+.comparison-tb tr:nth-child(even) td {
   background-color: #e0e0e0;
   padding: 15px;
 }
-.comparison-tb tr:hover td{
+
+.comparison-tb tr:hover td {
   background-color: #968e8e;
   padding: 15px;
 }
 
-.comparison-tb  td{
+.comparison-tb td {
   background-color: #ffffff;
   padding: 15px;
 }
@@ -302,17 +331,150 @@ a:hover {
   font-weight: 600;
   color: #333;
 }
+
 .txt-gray {
   font-weight: 500;
   color: gray;
 }
+
 .txt-green {
   font-weight: 500;
   color: green;
 }
+
 .txt-red {
   font-weight: 500;
   color: red;
 }
 
+/*===========================================================================*/
+/* Set style for form : Left Side */
+/*===========================================================================*/
+.contact-form-main-card {
+  background-color: #e6e6e627;
+  border: 1px solid #ff05de;
+  box-shadow: 0px 2px 8px #ff1db4;
 
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 20px;
+
+}
+
+.form-label {
+  display: block;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #eb059e;
+
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 4px;
+
+  font-size: 0.9rem;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.contact-form-main-card .form-textarea,
+.contact-form-main-card .form-select,
+.contact-form-main-card .form-input {
+  background-color: #f5f5f596;
+  color: #555;
+  border: 1px solid #333;
+}
+
+.contact-form-main-card .form-textarea:focus,
+.contact-form-main-card .form-select:focus,
+.contact-form-main-card .form-input:focus {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #b4b4b4;
+  box-shadow: 0px 0px 8px #de9ee4;
+
+  transform: translateY(-1px);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-checkbox-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+}
+
+.checkbox-item input[type="checkbox"] {
+  accent-color: rgb(255, 243, 81);
+
+  transform: scale(1.25);
+}
+
+.form-button {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  margin-top: 15px;
+
+  cursor: pointer;
+}
+
+.submit-button {
+  background: linear-gradient(45deg, rgb(247, 44, 138) 0%, rgb(199, 111, 240) 100%);
+}
+
+.reset-button {
+  background: linear-gradient(45deg, rgb(85, 85, 85) 0%, #cacaca 100%);
+}
+
+.submit-button:hover {
+  opacity: 0.8;
+}
+
+.reset-button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+}
