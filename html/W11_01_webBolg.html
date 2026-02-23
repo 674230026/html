@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -206,15 +206,65 @@
                     </div>
                     <!--card3 = form-->
                     <div class="card">
-                        📞 ติดต่อเรา
-                        ชื่อ นามสกุล อีเมล เบอร์โทรศัพท์ บริษัท/องค์กร
-                        หัวข้อที่สนใจ รายละเอียด
-                        ความสนใจเพิ่มเติม
-                        ต้องการรับข่าวสารทาง email
-                        สนใจบริการปรึกษา
-                        สนใจความร่วมมือ
-
-                        📨 ส่งข้อความ
+                        <h2 style="text-align: center;">📞 ติดต่อเรา</h2>
+                        <div class="contact-form-main-card">
+                            <form action="" method="">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fname" class="form-label">ชื่อ</label>
+                                        <input type="text" name="fname" id="fname" placeholder="ป้อนชื่อ" class="form-input">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lname" class="form-label">นามสกุล</label>
+                                        <input type="text" name="lname" id="lname" placeholder="ป้อนนามสกุล" class="form-input">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">อีเมล </label>
+                                        <input type="text" name="email" id="email" placeholder="ป้อนอีเมล" class="form-input">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tel" class="form-label">เบอร์โทรศัพท์</label>
+                                        <input type="text" name="tel" id="tel" placeholder="098-123-4585" class="form-input">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company" class="form-label">บริษัท/องค์กร</label>
+                                    <input type="text" name="company" id="company" placeholder="ป้อนชื่อยริษัทหรือองค์กร" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="interests" class="form-label">หัวข้อที่สนใจ</label>
+                                    <select name="toppic" id="topic" class="form-select">
+                                        <option value="Web devrlopment">Web devrlopment</option>
+                                        <option value="Mobile development">Mobile development</option>
+                                        <option value="UX/UI Design">UX/UI Design</option>
+                                        <option value="AI">AI</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="deail" class="form-label">รายละเอียด</label>
+                                    <textarea name="detail" id="detail" class="form-textarea"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="form-label">ความสนใจเพิ่มเติม</label>
+                                    <div class="form-checkbox-group">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="interrests1" value="newsletter"><span>ต้องการรับข่าวสารทาง email</span>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="interrests2" value="consult"><span>สนใจบริการปรึกษา</span>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="interrests3" value="partnership"><span>สนใจความร่วมมือ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div><button type="submit" onclick="alert(ส่งข้อความสำเร็จ)" class="form-button submit-button">📨 ส่งข้อความ</button></div>
+                                <div><button class="form-button reset-button">ล้างข้อมูล</button></div>
+                            
+                            </form>
+                        </div>
 
                     </div>
                 </main>
