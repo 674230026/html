@@ -540,45 +540,45 @@ a:hover {
   height: 250px;
 }
 /*===========================================================================*/
-  /* Set style for form : Left Side */
-  /*===========================================================================*/
+/* Set style for form : Left Side */
+/*===========================================================================*/
 
-  .contact-form-main-card.widget-2 {
-    background: linear-gradient(rgb(0, 202, 252), rgb(42, 78, 241));
-    border: 1px solid #05f7ff;
-    box-shadow: 0px 2px 8px #0ef7ff;
+.contact-form-main-card.widget-2 {
+  background: linear-gradient(rgb(0, 202, 252), rgb(42, 78, 241));
+  border: 1px solid #05f7ff;
+  box-shadow: 0px 2px 8px #0ef7ff;
 
-    padding: 40px;
-    margin-top: 20px;
-    border-radius: 20px;
-  }
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
 
-  .form-label.wg2 {
-    color: rgb(255, 146, 82);
-  }
+.form-label.wg2 {
+  color: rgb(255, 146, 82);
+}
 
-  .submit-button.wg2 {
-    background: linear-gradient(
-      45deg,
-      rgb(80, 247, 247) 0%,
-      rgb(3, 20, 255) 100%
-    );
-    box-shadow: 0 0 7px #3251dd;
-  }
+.submit-button.wg2 {
+  background: linear-gradient(
+    45deg,
+    rgb(80, 247, 247) 0%,
+    rgb(3, 20, 255) 100%
+  );
+  box-shadow: 0 0 7px #3251dd;
+}
 
-  .form-input.wg2,
-  .form-select.wg2 {
-    border: 1px solid #7308ff;
-    box-shadow: 0 0 9px #ff0550;
-  }
+.form-input.wg2,
+.form-select.wg2 {
+  border: 1px solid #7308ff;
+  box-shadow: 0 0 9px #ff0550;
+}
 
 /*ตารางราคาทอง*/
 :root {
-  --bg01 : rgb(255, 0, 0);
-  --bg02 : rgba(243, 243, 243, 0.493);
-  --bg03 : rgb(59, 59, 59);
-  --line : orange;
-  --green-txt : rgb(0, 241, 0) ;
+  --bg01: rgb(255, 0, 0);
+  --bg02: rgba(243, 243, 243, 0.493);
+  --bg03: rgb(59, 59, 59);
+  --line: orange;
+  --green-txt: rgb(0, 241, 0);
 }
 
 .gold-table {
@@ -588,7 +588,6 @@ a:hover {
 
   width: 100%;
   height: 300px;
-
 }
 .gold-table:hover {
   filter: blur(0px);
@@ -596,7 +595,7 @@ a:hover {
 }
 
 .gold-table th,
-.gold-table td{
+.gold-table td {
   border: 1px solid var(--line);
 }
 
@@ -612,13 +611,12 @@ a:hover {
 .wrap-gold-table:hover {
   filter: blur(0px);
   transform: translateY(-5px);
-  
 }
-.gold-table thead th{
+.gold-table thead th {
   background-color: var(--bg03);
   color: white;
 }
-.gold-table th{
+.gold-table th {
   background-color: #868686;
   color: white;
 }
@@ -628,13 +626,13 @@ a:hover {
   font-weight: bold;
 }
 
-
 .card.table {
-  background: linear-gradient(135deg,#6367FF ,#8494FF , #C9BEFF , #FFDBFD );
+  background: linear-gradient(135deg, #6367ff, #8494ff, #c9beff, #ffdbfd);
+  margin-top: 30px;
 }
 
 .card.table h3,
-.card.table p{
+.card.table p {
   color: rgb(230, 230, 230);
 }
 
@@ -670,16 +668,134 @@ a:hover {
   border-top: 10px solid var(--bg01);
 }
 
-  footer {
-    background-color: #000000;
-    color: rgb(216, 216, 216);
+footer {
+  background-color: #000000;
+  color: rgb(216, 216, 216);
 
-    padding: 40px 0;
-    text-align: center;
-    margin-top: 30px;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+/*===========================================================================*/
+/* responsive */
+/*===========================================================================*/
+/*หน้าจอสำหรับ tablet: 768 - 991*/
+@media (max-width: 992px) {
+  .site-header {
+    background-color: yellow;
+  }
+  .content-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .form-checkbox-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .card.table {
+    margin: 5px 20px;
+  }
+  .header-inner{padding: 0 15px;}
+}
+
+/*หน้าจอสำหรับ mobile: 577 - 768 */
+@media (max-width: 768px) {
+  html{font-size: 14px;}
+  .site-header {
+    background-color: rgb(9, 255, 0);
+  }
+  .nav-menu {
+    flex-direction: column;
+    padding: 15px 30px;
+  }
+  .nav-menu li a{
+    border-top: 1px solid #f8f8f88c;
+    text-decoration: none;
+  }
+  .hero-grid {grid-template-columns: 1fr;}
+  .wrap-gold-table{
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .header-inner{padding: 0 30px;}
+
+  /*หน้าจอสำหรับ mobile-small: 1 - 576*/
+  @media (max-width: 576px) {
+    .site-header {
+      background-color: rgb(255, 0, 212);
+    }
+
+    /*สร้างเส้นตรง*/
+    #hamberger-menu{
+      display: block;
+      height: 25px;
+      width: 30px;
+      position:relative;
+      z-index: 1000;
+      cursor: pointer;
+      margin-left: 40px;
+    }
+    #hamberger-menu span,
+    #hamberger-menu span::before,
+    #hamberger-menu span::after{
+      background-color: #ffffff;
+      height: 3px;
+      width: 100%;
+      display: block;
+      position: absolute;
+      content: "";
+    }
+    /*จัดตำแหน่งเส้น*/
+    #hamberger-menu span{top: 11px;}
+    #hamberger-menu span::before{top: -8px;}
+    #hamberger-menu span::after{top: 8px;}
+    
+        /*สร้างเส้น x*/
+        /*จัดตำแหน่งเส้น*/
+    #hamberger-menu.close span{background: transparent;}
+    #hamberger-menu.close span::before{
+      top: 0;
+      transform: rotate(45deg);
+    }
+    #hamberger-menu.close span::after{
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+
+    /*ซ่อนเมนูหลัก*/
+    #menu {
+      display: none;
+      flex-direction: column;
+    }
+    #menu.overlay{display: flex;}
   }
 
-  footer p {
-    margin-bottom: 10px;
-  }
+
+  
+  /*การสลับตำแหน่ง item*/
+  .order-box-image{order: 3;}
+  .order-box-table{order: 1;}
+  .order-box-form{order: 2;}
+
+  .right-side{
+  display: flex;
+  flex-direction: column;
+}
+
+  .order-w-into{order:1}
+  .order-w-form-green{order:4}
+  .order-w-form-purple{order:5}
+  .order-w-fb{order:2}
+  .order-w-sp{order:3}
+}
 }
