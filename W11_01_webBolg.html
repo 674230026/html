@@ -40,14 +40,19 @@
     <!-- Navbar -->
     <nav class="main-nav">
         <div class="wrapper">
-            <ul class="nav-menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">AI Technology</a></li>
-                <li><a href="#">Machine Learning</a></li>
-                <li><a href="#">Deep Learning</a></li>
-                <li><a href="#">AI Tools</a></li>
-                <li><a href="#">AI News</a></li>
-            </ul>
+            <div id="hamberger-menu">
+                <span></span>
+            </div>
+            <div id="menu">
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">AI Technology</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Deep Learning</a></li>
+                    <li><a href="W03_01_heading.html">AI Tools</a></li>
+                    <li><a href="#contact">AI News</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -95,7 +100,7 @@
                 <!--left side-->
                 <main class="post-list">
                     <!--card1 = image-->
-                    <div class="card">
+                    <div class="card order-box-image">
                         <p class="post-headline">CATEGORY ARCHIVES: <strong>RESPONSIVE DESIGN</strong></p>
 
                         <div class="post-header">
@@ -125,7 +130,7 @@
                         </div>
                     </div>
                     <!--card2 = table-->
-                    <div class="card">
+                    <div class="card order-box-table">
                         <p class="post-headline">CATEGORY ARCHIVES: <strong>RESPONSIVE DESIGN</strong></p>
 
                         <div class="post-header">
@@ -206,7 +211,7 @@
 
                     </div>
                     <!--card3 = form-->
-                    <div class="card">
+                    <div class="card order-box-form" id="contact">
                         <h2 style="text-align: center;">📞 ติดต่อเรา</h2>
                         <div class="contact-form-main-card">
                             <form action="" method="">
@@ -282,7 +287,7 @@
                 <!--right side-->
                 <aside class="right-side">
                     <!--widget 01-->
-                    <div class="widget">
+                    <div class="widget order-w-into">
                         <div class="widget-title">
                             สวัสดีครับ ยินดีต้อนรับ
                         </div>
@@ -294,7 +299,7 @@
                         <div class="form-button fb-btn">กดติดตามใน Facebook</div>
                     </div>
                     <!--widget 02-->
-                    <div class="widget">
+                    <div class="widget order-w-form-green">
                         <div class="contact-form-main-card widget">
                             <h3 style="margin-bottom: 12px; color: white;">📧 รับข่าวสารใหม่</h3>
                             <form action="">
@@ -320,7 +325,7 @@
                         </div>
                     </div>
                     <!--widget 03-->
-                    <div class="widget">
+                    <div class="widget order-w-form-purple">
 
                         <div class="contact-form-main-card widget-2">
                             <h3 style="margin-bottom: 12px; color: white;">💬 ติดต่อด่วน</h3>
@@ -345,7 +350,7 @@
                         </div>
                     </div>
                     <!--widget 04-->
-                    <div class="widget">
+                    <div class="widget order-w-fb">
                         <div class="widget-title">
                             Facebook Like
                         </div>
@@ -356,7 +361,7 @@
 
                     </div>
                     <!--widget 05-->
-                    <div class="widget">
+                    <div class="widget order-w-sp">
                         <div class="widget-title">Sponsor</div>
                         <div class="auther-photo sponsor">พื้นที่โฆษณา / วิดีโอ</div>
 
@@ -365,7 +370,7 @@
                 </aside>
             </div>
             <!--table ราคาทอง-->
-            <div class="card table" style="margin-top: 30px;">
+            <div class="card table">
                         <p class="post-headline">ตารางสรุปราคาทองรายเดือนต่ำสุด-สูงสุดตั้งแต่ปี 2549</p>
 
 
@@ -471,6 +476,28 @@
         <a href="">Contact</a>
     </footer>
 
+
+        <script>
+        var burgerMenu = document.getElementById('hamberger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
 </body>
 
 </html>
