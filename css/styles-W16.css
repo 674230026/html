@@ -96,6 +96,11 @@ header {
     transition: all 0.2s ease;
 }
 
+.btn-primary,
+.btn-submit  {
+    margin-bottom: 10px;
+}
+
 .btn-signup,
 .btn-primary,
 .btn-submit {
@@ -301,6 +306,10 @@ section {
     font-size: 1rem;
 }
 
+.form-textarea {
+    min-height: 130px;
+}
+
 .radio-group,
 .checkbox-group {
     display: flex;
@@ -322,6 +331,7 @@ section {
 
     gap: 12px;
     flex-wrap: wrap;
+    margin: 15px auto;
 }
 
 .btn-submit {
@@ -342,14 +352,13 @@ section {
     background-color: #cbd5e1;
 }
 
-.form-group.t {
-    margin-bottom: 15px;
-}
-
 .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    gap: 24px;
+}
+.form-group {
+    flex: 1;
+    margin: 10px auto;
 }
 
 /* ================= FOOTER ================= */
@@ -481,7 +490,29 @@ footer {
         border-bottom: 1px solid #e6e6e6;
     }
 
+    .radio-group,
+    .checkbox-group {
+        flex-wrap: wrap;
+    }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .form-row {
+    display: block;
+    }
+
+    .form-group {
+        margin-top: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .btn-primary,
+    .btn-reset,
+    .btn-submit{
+        width: 100%;
+    }
 }
